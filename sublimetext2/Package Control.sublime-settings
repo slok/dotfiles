@@ -1,0 +1,11 @@
+{
+	"auto_upgrade_last_run": 1346582884,
+	"installed_packages":
+	[
+		"Package Control",
+		"SublimeLinter",
+		"SublimeRope",
+		"Theme - Soda",
+		"ZenCoding"
+	]
+}

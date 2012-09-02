@@ -1,0 +1,14 @@
+{
+	"auto_complete": true,
+	"font_face": "Inconsolata",
+	"font_size": 12,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+    "tab_size": 4,
+	"translate_tabs_to_spaces": true,
+    "rulers": [80],
+    "theme": "Soda Dark.sublime-theme",
+    "soda_classic_tabs": true
+}
