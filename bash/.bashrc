@@ -29,7 +29,7 @@ BOLD_WHITE="\[\033[$BOLD;37m\]"
 #User prompt with colors in user and host
 PS1="$BOLD_GREEN\u@\h$RESET:$BOLD_BLUE\W$RESET\$ "
 #root prompt
-#PS1="$BOLD_RED\u@\h$RESET:$BOLD_BLUE\W$RESET\$ "
+#PS1="$BOLD_RED\u@\h$RESET:$BOLD_BLUE\W$RESET\# "
 
 #For color testing
 #PS1="$BLACK\u\n $RED\u\n $YELLOW\u\n $MAGENTA\u\n $BLUE\u\n $CYAN\u\n $WHITE\u\n $BOLD_BLACK\u\n $BOLD_RED\u\n $BOLD_GREEN\u\n $BOLD_YELLOW\u\n $BOLD_BLUE 
