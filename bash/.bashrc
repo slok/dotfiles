@@ -47,33 +47,31 @@ alias ls='ls --color'
 alias grep='grep -i --color'
 
 ######################################################################################
-#exports
-
-export MDISS_RESOURCES_HOME=/home/slok/workspace/mdissphoto/resources
-export PATH=$PATH:/usr/share/sbt/bin
 
 #Rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
 
 #Virtualenvwrapper
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Projects
-#export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-source /usr/bin/virtualenvwrapper.sh
+#export WORKON_HOME=$HOME/.virtualenvs
+#export PROJECT_HOME=$HOME/Projects
+#export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
+#export VIRTUALENVWRAPPER_VIRTUALENV=virtualenv2
+#source /usr/bin/virtualenvwrapper.sh
 
 #Play framework
-export PATH=$PATH:/usr/share/play/
+#export PATH=$PATH:/usr/share/play/
 
-#Go language
-export PATH=$PATH:/usr/lib64/go/bin
+# GO
+#export GOPATH=~/projects/go
+#export PATH=$PATH:$GOPATH/bin
 
 #Heroku
-HEROKU_PATH=/home/slok/sources/heroku/heroku-client
-export PATH=$PATH:$HEROKU_PATH/bin
+#HEROKU_PATH=/home/slok/sources/heroku/heroku-client
+#export PATH=$PATH:$HEROKU_PATH/bin
 
 #NVM for Node.js
-source ~/nvm/nvm.sh
+#source ~/nvm/nvm.sh
 
 # Go version manager
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+#[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
