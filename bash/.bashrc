@@ -45,6 +45,7 @@ PS1="$BOLD_GREEN\u@\h$RESET:$BOLD_BLUE\W$RESET\$ "
 
 alias ls='ls --color'
 alias grep='grep -i --color'
+alias ubuntu='docker run --rm -it ubuntu:14.04 /bin/bash'
 
 ######################################################################################
 
