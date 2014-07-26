@@ -1,5 +1,8 @@
 #/home/slok/.bashrc
 
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
 ######################################################################################
 #Consts
 BOLD=01
@@ -76,3 +79,9 @@ alias ubuntu='docker run --rm -it ubuntu:14.04 /bin/bash'
 
 # Go version manager
 #[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
+# TMUX (Load session if any)
+#if which tmux 2>&1 >/dev/null; then
+#    #if not inside a tmux session, and if no session is started, start a new session
+#    test -z "$TMUX" && (tmux attach || tmux new-session)
+#fi
