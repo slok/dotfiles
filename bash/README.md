@@ -11,7 +11,7 @@ fonts
 urxvt
 -----
     
-    pacman -Sy rxvt-unicode rxvt-unicode-terminfo
+    pacman -Sy rxvt-unicode rxvt-unicode-terminfo xclip
     cp .Xresources $HOME/
     sudo cp urxvtclip /usr/lib/urxvt/perl/clipboard
 
