@@ -51,6 +51,8 @@ alias grep='grep -i --color'
 alias ubuntu='docker run --rm -it ubuntu:14.04 /bin/bash'
 
 ######################################################################################
+#Local bin
+export PATH="$HOME/.local/bin:$PATH
 
 #Rbenv
 #export PATH="$HOME/.rbenv/bin:$PATH"
