@@ -2,10 +2,10 @@
 fonts
 -----
 
-    wget http://downloads.sourceforge.net/project/sourcecodepro.adobe/SourceCodePro_FontsOnly-1.017.zip
-    unzip SourceCodePro_FontsOnly-1.017.zip
+    wget https://github.com/adobe-fonts/source-code-pro/archive/1.017R.zip
+    unzip 1.017R.zip
     mkdir -p ~/.fonts
-    cp SourceCodePro_FontsOnly-1.017/OTF/*.otf ~/.fonts/
+    cp source-code-pro-1.017R/OTF/*.otf ~/.fonts/
     fc-cache -f -v
 
 urxvt
