@@ -17,6 +17,7 @@ Install Sublime packages
 * git
 * soda-theme
 * sublimelinter
+* Theme-Spacegray
 
 Configure Linter
 ----------------

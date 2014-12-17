@@ -1,17 +1,44 @@
 {
-	"auto_complete": true,
+	// Theme stuff
+	"theme": "Spacegray.sublime-theme",
+	//"theme": "Soda Dark.sublime-theme",
+	//"soda_classic_tabs": true,
+
+    // Visual stuff
+    //------------
+	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
+    //"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme"
 	"font_face": "Inconsolata",
 	"font_size": 12,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
+    "font_options": "subpixel_antialias",
+    "draw_minimap_border": true,
+    "bold_folder_labels": true,
+    "highlight_modified_tabs": true,
+
+	// Tab and spaces stuff
+	//---------------------
+	"tab_size": 4,
+    "trim_trailing_white_space_on_save": true,
+	"translate_tabs_to_spaces": true,
+
+	// Source code stuff
+	//------------------
+    "highlight_line": true,
+	"auto_complete": true,
 	"rulers":
 	[
 		80
 	],
-	"soda_classic_tabs": true,
-	"tab_size": 4,
-	"theme": "Soda Dark.sublime-theme",
-	"translate_tabs_to_spaces": true
+    //"line_padding_bottom": 1,
+    //"line_padding_top": 1,
+
+
+    // Sublime settings stuff
+    //-----------------------
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+    "scroll_past_end": true,
+	"update_check": false
 }

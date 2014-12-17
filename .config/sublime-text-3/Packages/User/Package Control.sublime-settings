@@ -3,6 +3,9 @@
 	[
 		"Git",
 		"GitGutter",
-		"Theme - Soda"
+		"Theme - Soda",
+        "Theme - Spacegray",
+        "SublimeLinter",
+        "SublimeLinter-flake8"
 	]
 }
