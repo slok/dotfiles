@@ -35,7 +35,7 @@ PS1="$BOLD_GREEN\u@\h$RESET:$BOLD_BLUE\W$RESET\$ "
 #PS1="$BOLD_RED\u@\h$RESET:$BOLD_BLUE\W$RESET\$ "
 
 #For color testing
-#PS1="$BLACK\u\n $RED\u\n $YELLOW\u\n $MAGENTA\u\n $BLUE\u\n $CYAN\u\n $WHITE\u\n $BOLD_BLACK\u\n $BOLD_RED\u\n $BOLD_GREEN\u\n $BOLD_YELLOW\u\n $BOLD_BLUE 
+#PS1="$BLACK\u\n $RED\u\n $YELLOW\u\n $MAGENTA\u\n $BLUE\u\n $CYAN\u\n $WHITE\u\n $BOLD_BLACK\u\n $BOLD_RED\u\n $BOLD_GREEN\u\n $BOLD_YELLOW\u\n $BOLD_BLUE
 #\u\n $BOLD_MAGENTA\u\n $BOLD_CYAN\u\n $BOLD_WHITE\u\n $RESET$"
 
 #user prompt with colors in last character (# and $)
@@ -53,6 +53,9 @@ alias ubuntu='docker run --rm -it ubuntu:14.04 /bin/bash'
 ######################################################################################
 #Local bin
 export PATH="$HOME/.local/bin:$PATH
+
+# Npm on user home (npm config set prefix ~/npm)
+#export PATH="$PATH:$HOME/npm/bin"
 
 #Rbenv
 #export PATH="$HOME/.rbenv/bin:$PATH"
