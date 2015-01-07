@@ -29,6 +29,11 @@ BOLD_CYAN="\[\033[$BOLD;36m\]"
 BOLD_WHITE="\[\033[$BOLD;37m\]"
 
 ######################################################################################
+#User prompt with colors in user and host git aware branch
+#export GITAWAREPROMPT=~/.git-aware-prompt
+#source $GITAWAREPROMPT/main.sh
+#PS1="$BOLD_GREEN\u@\h$RESET:$BOLD_BLUE\W$YELLOW \$git_branch$RESET\$ "
+
 #User prompt with colors in user and host
 PS1="$BOLD_GREEN\u@\h$RESET:$BOLD_BLUE\W$RESET\$ "
 #root prompt
