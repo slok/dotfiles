@@ -8,11 +8,12 @@ Sourcecodepro font
     cp source-code-pro-1.017R/OTF/*.otf ~/.fonts/
     fc-cache -f -v
 
-Fontawesome font
+Fontawesome font & powerline
 ----
     wget http://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.2.0.zip
     unzip font-awesome-4.2.0.zip
     cp font-awesome-4.2.0/fonts/FontAwesome.otf ~/.fonts/
+    wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf -O /home/slok/.fonts/PowerlineSymbols.otf
     fc-cache -f -v
 
 Set fallback for glyphs
@@ -22,10 +23,10 @@ Set fallback for glyphs
 
 interesting links:
 
-    * http://www.freedesktop.org/software/fontconfig/fontconfig-user.html
-    * https://wiki.archlinux.org/index.php/font_configuration
-    * https://github.com/gabrielelana/awesome-terminal-fonts
-    * https://github.com/thestinger/termite
+* http://www.freedesktop.org/software/fontconfig/fontconfig-user.html
+* https://wiki.archlinux.org/index.php/font_configuration
+* https://github.com/gabrielelana/awesome-terminal-fonts
+* https://github.com/thestinger/termite
 
 termite
 -------
@@ -37,10 +38,11 @@ termite
 testing glyps:
 
     python -c "print(''.join([chr(i) + '\u0020\u0020'  for i in range(61440, 61440 + 525)]))"
+    python -c "print('\u2588\ue0a0\ue0a1\ue0a2\ue0b0\ue0b1\ue0b2\ue0b3')"
 
 interesting links:
 
-    * https://wiki.archlinux.org/index.php/Termite
+* https://wiki.archlinux.org/index.php/Termite
 
 
 tmux
