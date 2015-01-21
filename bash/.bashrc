@@ -8,26 +8,34 @@
 BOLD=01
 NOTBOLD=0
 
-RESET="\[\033[00m\]"
+RESET="\[\e[00m\]"
 
-BLACK="\[\033[$NOTBOLD;30m\]"
-RED="\[\033[$NOTBOLD;31m\]"
-GREEN="\[\033[$NOTBOLD;32m\]"
-YELLOW="\[\033[$NOTBOLD;33m\]"
-BLUE="\[\033[$NOTBOLD;34m\]"
-MAGENTA="\[\033[$NOTBOLD;35m\]"
-CYAN="\[\033[$NOTBOLD;36m\]"
-WHITE="\[\033[$NOTBOLD;37m\]"
+BLACK="\[\e[$NOTBOLD;30m\]"
+RED="\[\e[$NOTBOLD;31m\]"
+GREEN="\[\e[$NOTBOLD;32m\]"
+YELLOW="\[\e[$NOTBOLD;33m\]"
+BLUE="\[\e[$NOTBOLD;34m\]"
+MAGENTA="\[\e[$NOTBOLD;35m\]"
+CYAN="\[\e[$NOTBOLD;36m\]"
+WHITE="\[\e[$NOTBOLD;37m\]"
 
-BOLD_BLACK="\[\033[$BOLD;30m\]"
-BOLD_RED="\[\033[$BOLD;31m\]"
-BOLD_GREEN="\[\033[$BOLD;32m\]"
-BOLD_YELLOW="\[\033[$BOLD;33m\]"
-BOLD_BLUE="\[\033[$BOLD;34m\]"
-BOLD_MAGENTA="\[\033[$BOLD;35m\]"
-BOLD_CYAN="\[\033[$BOLD;36m\]"
-BOLD_WHITE="\[\033[$BOLD;37m\]"
+BOLD_BLACK="\[\e[$BOLD;30m\]"
+BOLD_RED="\[\e[$BOLD;31m\]"
+BOLD_GREEN="\[\e[$BOLD;32m\]"
+BOLD_YELLOW="\[\e[$BOLD;33m\]"
+BOLD_BLUE="\[\e[$BOLD;34m\]"
+BOLD_MAGENTA="\[\e[$BOLD;35m\]"
+BOLD_CYAN="\[\e[$BOLD;36m\]"
+BOLD_WHITE="\[\e[$BOLD;37m\]"
 
+BACK_BLACK='\e[40m'   # Black - Background
+BACK_RED='\e[41m'   # Red
+BACK_GREEN='\e[42m'   # Green
+BACK_YELLOW='\e[43m'   # Yellow
+BACK_BLUE='\e[44m'   # Blue
+BACK_PURPLE='\e[45m'   # Purple
+BACK_CYAN='\e[46m'   # Cyan
+BACK_WHITE='\e[47m'   # White
 ######################################################################################
 # Font stuff
 # Redundant
@@ -39,8 +47,17 @@ export XDG_CONFIG_HOME="$HOME/.config"
 #source $GITAWAREPROMPT/main.sh
 #PS1="$BOLD_GREEN\u@\h$RESET:$BOLD_BLUE\W$YELLOW \$git_branch$RESET\$ "
 
+# How to get special characters dor the prompt:
+#   echo -e "\xef\x81\x8b" |hexdump -b
+#   0000000 357 201 213 012
+#   0000004
+# Take the "357 201 213" and set as \357\201\213
+#LAST_CHAR="\357\201\224\357\201\224"
+#PS1="$BOLD_GREEN\u@\h$RESET:$BOLD_BLUE\W$YELLOW \$git_branch$RESET$LAST_CHAR "
+
 #User prompt with colors in user and host
 PS1="$BOLD_GREEN\u@\h$RESET:$BOLD_BLUE\W$RESET\$ "
+
 #root prompt
 #PS1="$BOLD_RED\u@\h$RESET:$BOLD_BLUE\W$RESET\$ "
 
@@ -49,9 +66,9 @@ PS1="$BOLD_GREEN\u@\h$RESET:$BOLD_BLUE\W$RESET\$ "
 #\u\n $BOLD_MAGENTA\u\n $BOLD_CYAN\u\n $BOLD_WHITE\u\n $RESET$"
 
 #user prompt with colors in last character (# and $)
-#PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[01;36m\]\$\[\033[0;0m\] '
+#PS1='\[\e[01;32m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\W\[\e[01;36m\]\$\[\e[0;0m\] '
 #root prompt
-#PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[01;31m\]\$\[\033[0;0m\] '
+#PS1='\[\e[01;32m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\W\[\e[01;31m\]\$\[\e[0;0m\] '
 
 ######################################################################################
 #Alias
