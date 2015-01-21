@@ -1,0 +1,65 @@
+[options]
+resize_grip = false
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+visible_bell = false
+mouse_autohide = false
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+font = Source Code Pro 11
+scrollback_lines = 10000
+search_wrap = true
+#icon_name = terminal
+geometry = 864x486
+browser = chromium
+
+# 0.0: opaque, 1.0: transparent
+transparency = 0.0
+pseudo_transparency = false
+
+# "system", "on" or "off"
+cursor_blink = system
+
+# "block", "underline" or "ibeam"
+cursor_shape = block
+
+
+[colors]
+foreground = #bbbbbb
+foreground_bold = #ffffff
+background = #000000
+cursor = #bbbbbb
+color0 = #4c4c4c
+color1 = #bb0000
+color2 = #5fde8f
+color3 = #f3f167
+color4 = #276bd8
+color5 = #bb00bb
+color6 = #00dadf
+color7 = #bbbbbb
+color8 = #555555
+color9 = #ff5555
+color10 = #55ff55
+color11 = #ffff55
+color12 = #5555ff
+color13 = #ff55ff
+color14 = #55ffff
+color15 = #ffffff
+
+# if unset, will reverse foreground and background
+#highlight = #2f2f2f
+
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini

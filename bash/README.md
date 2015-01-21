@@ -1,5 +1,5 @@
 
-fonts
+Sourcecodepro font
 -----
 
     wget https://github.com/adobe-fonts/source-code-pro/archive/1.017R.zip
@@ -8,13 +8,40 @@ fonts
     cp source-code-pro-1.017R/OTF/*.otf ~/.fonts/
     fc-cache -f -v
 
-urxvt
------
+Fontawesome font
+----
+    wget http://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.2.0.zip
+    unzip font-awesome-4.2.0.zip
+    cp font-awesome-4.2.0/fonts/FontAwesome.otf ~/.fonts/
+    fc-cache -f -v
 
-    pacman -Sy rxvt-unicode rxvt-unicode-terminfo xclip
-    cp .Xresources $HOME/
-    sudo cp urxvtclip /usr/lib/urxvt/perl/clipboard
-    xrdb ~/.Xresources
+Set fallback for glyphs
+---
+    cp -r ../.config/fontconfig $HOME/.config
+    fc-cache -f -v
+
+interesting links:
+
+    * http://www.freedesktop.org/software/fontconfig/fontconfig-user.html
+    * https://wiki.archlinux.org/index.php/font_configuration
+    * https://github.com/gabrielelana/awesome-terminal-fonts
+    * https://github.com/thestinger/termite
+
+termite
+-------
+
+    yaourt -Sy termite-git
+    cp -r ../.config/termite $HOME/.config
+
+
+testing glyps:
+
+    python -c "print(''.join([chr(i) + '\u0020\u0020'  for i in range(61440, 61440 + 525)]))"
+
+interesting links:
+
+    * https://wiki.archlinux.org/index.php/Termite
+
 
 tmux
 ----
@@ -38,3 +65,14 @@ Uncomment:
 And comment:
 
     PS1="$BOLD_GREEN\u@\h$RESET:$BOLD_BLUE\W$RESET\$ "
+
+Deprecated
+==========
+
+urxvt
+-----
+
+    pacman -Sy rxvt-unicode rxvt-unicode-terminfo xclip
+    cp .Xresources $HOME/
+    sudo cp urxvtclip /usr/lib/urxvt/perl/clipboard
+    xrdb ~/.Xresources

@@ -29,6 +29,11 @@ BOLD_CYAN="\[\033[$BOLD;36m\]"
 BOLD_WHITE="\[\033[$BOLD;37m\]"
 
 ######################################################################################
+# Font stuff
+# Redundant
+export XDG_CONFIG_HOME="$HOME/.config"
+
+######################################################################################
 #User prompt with colors in user and host git aware branch
 #export GITAWAREPROMPT=~/.git-aware-prompt
 #source $GITAWAREPROMPT/main.sh
@@ -56,36 +61,39 @@ alias grep='grep -i --color'
 alias ubuntu='docker run --rm -it ubuntu:14.04 /bin/bash'
 
 ######################################################################################
-#Local bin
+# Local bin
 export PATH="$HOME/.local/bin:$PATH
 
 # Npm on user home (npm config set prefix ~/npm)
 #export PATH="$PATH:$HOME/npm/bin"
 
-#Rbenv
+# Rbenv
 #export PATH="$HOME/.rbenv/bin:$PATH"
 #eval "$(rbenv init -)"
 
-#Virtualenvwrapper
+# Virtualenvwrapper
 #export WORKON_HOME=$HOME/.virtualenvs
 #export PROJECT_HOME=$HOME/Projects
 #export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
 #export VIRTUALENVWRAPPER_VIRTUALENV=virtualenv2
 #source /usr/bin/virtualenvwrapper.sh
 
-#Play framework
+# Play framework
 #export PATH=$PATH:/usr/share/play/
 
 # GO
 #export GOPATH=~/projects/go
 #export PATH=$PATH:$GOPATH/bin
 
-#Heroku
+# Heroku
 #HEROKU_PATH=/home/slok/sources/heroku/heroku-client
 #export PATH=$PATH:$HEROKU_PATH/bin
 
-#NVM for Node.js
+# NVM for Node.js
 #source ~/nvm/nvm.sh
+
+# NPM userspace (Use:  npm config set prefix ~/npm)
+#export PATH="$PATH:$HOME/npm/bin"
 
 # Go version manager
 #[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
