@@ -79,7 +79,7 @@ alias ubuntu='docker run --rm -it ubuntu:14.04 /bin/bash'
 
 ######################################################################################
 # Local bin
-export PATH="$HOME/.local/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
 
 # Npm on user home (npm config set prefix ~/npm)
 #export PATH="$PATH:$HOME/npm/bin"
