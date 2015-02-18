@@ -8,8 +8,8 @@
     //------------
 	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
     //"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme"
-	"font_face": "Inconsolata",
-	"font_size": 12,
+	"font_face": "Source Code Pro",
+	"font_size": 11,
     "font_options": "subpixel_antialias",
     "draw_minimap_border": true,
     "bold_folder_labels": true,
