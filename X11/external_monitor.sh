@@ -10,13 +10,15 @@ RES_MONITOR_W=1920
 RES_MONITOR_H=1080
 
 # Scale of the external monitor
-SCALE_W=2
-SCALE_H=2
+SCALE_W="2"
+SCALE_H="2"
 
-POS_LAPTOP_H=$((RES_MONITOR_H * SCALE_H))
-FB_MONITOR_W=$((RES_MONITOR_W * SCALE_W))
-FB_MONITOR_H=$((RES_LAPTOP_H + ${POS_LAPTOP_H}))
-
+POS_LAPTOP_H=$(python -c "print(int(${RES_MONITOR_H} * ${SCALE_H}))")
+FB_MONITOR_W=$(python -c "print(int(${RES_MONITOR_W} * ${SCALE_W}))")
+FB_MONITOR_H=$(python -c "print(int(${RES_LAPTOP_H} + ${POS_LAPTOP_H}))")
+echo $POS_LAPTOP_H
+echo $FB_MONITOR_W
+echo $FB_MONITOR_H
 xrandr --output eDP1\
       --auto \
       --pos 0x${POS_LAPTOP_H} \
